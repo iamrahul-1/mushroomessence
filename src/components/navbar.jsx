@@ -8,26 +8,23 @@ export default function Navbar() {
       <div className="flex items-center justify-between py-5 font-medium">
         <img className=" h-32 " src={assets.logo} />
         <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
-          <NavLink
-            to={"./mushroomessence"}
-            className="flex flex-col items-center gap-1"
-          >
+          <NavLink to={"/"} className="flex flex-col items-center gap-1">
             <p>HOME</p>
             <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
           </NavLink>
-          <NavLink className="flex flex-col items-center gap-1">
+          <NavLink to={"/about"} className="flex flex-col items-center gap-1">
             <p>ABOUT</p>
             <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
           </NavLink>
-          <NavLink className="flex flex-col items-center gap-1">
+          <NavLink to={"/shop"} className="flex flex-col items-center gap-1">
             <p>SHOP</p>
             <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
           </NavLink>
-          <NavLink className="flex flex-col items-center gap-1">
+          <NavLink to={"/blog"} className="flex flex-col items-center gap-1">
             <p>BLOG</p>
             <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
           </NavLink>
-          <NavLink className="flex flex-col items-center gap-1">
+          <NavLink to={"/cart"} className="flex flex-col items-center gap-1">
             <p>CART</p>
             <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
           </NavLink>
