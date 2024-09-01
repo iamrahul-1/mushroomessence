@@ -1,9 +1,10 @@
-const Home = () => {
+import React from "react";
+import Hero from "../components/hero";
+
+export default function Home() {
   return (
-    <div className="main">
-      <h1>home</h1>
+    <div>
+      <Hero />
     </div>
   );
-};
-
-export default Home;
+}
