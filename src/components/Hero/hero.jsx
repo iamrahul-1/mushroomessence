@@ -18,6 +18,7 @@ export default function Hero() {
       <Swiper
         className="mySwiper"
         effect={"fade"}
+        loop={true}
         autoplay={{ delay: 5000 }}
         pagination={{
           clickable: true,
