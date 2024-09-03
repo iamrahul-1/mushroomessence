@@ -14,7 +14,7 @@ import { assets } from "../../assets/assets";
 export default function Hero() {
   return (
     <div>
-      <div className=" absolute left-0 w-full top-0 h-[40rem] bg-amber-200 -z-30"></div>
+      <div className=" absolute left-0 w-full top-0 h-full bg-amber-200 -z-30"></div>
       <Swiper
         className="mySwiper"
         effect={"fade"}
