@@ -8,7 +8,7 @@ import Cart from "./pages/cart";
 
 function App() {
   return (
-    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+    <div className="px-2 sm:px-[2vw] md:px-[3vw] lg:px-[4vw]">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
