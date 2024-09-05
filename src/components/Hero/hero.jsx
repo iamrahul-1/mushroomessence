@@ -1,12 +1,13 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import required modules
-import { EffectFade, Autoplay, Pagination } from "swiper/modules";
+import { EffectFade, Pagination, Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/autoplay";
+// import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./styles.css";
 import { assets } from "../../assets/assets";
@@ -19,11 +20,11 @@ export default function Hero() {
         className="mySwiper"
         effect={"fade"}
         loop={true}
-        autoplay={{ delay: 5000 }}
         pagination={{
           clickable: true,
         }}
-        modules={[EffectFade, Autoplay, Pagination]}
+        navigation={true}
+        modules={[EffectFade, Pagination, Navigation]}
       >
         <SwiperSlide>
           <img src={assets.img1}></img>
@@ -74,9 +75,7 @@ export default function Hero() {
         </svg>
       </div>
 
-      <div className="flex justify-center py-48">
-        <h1 className="text-5xl">A Mushroom for All of Your Needs</h1>
-      </div>
+      
     </div>
   );
 }
